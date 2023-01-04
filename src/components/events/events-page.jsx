@@ -4,7 +4,7 @@ import Link from 'next/link';
 const AllEvents = ({ data }) => {
     return (
         <div className='events_page'>
-            <h1>Events Page</h1>
+
             <div >
                 {data.map(ev => (
                     <Link key={ev.id} href={`/events/${ev.id}`}>
